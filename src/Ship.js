@@ -1,7 +1,7 @@
 
 class Ship {
-    constructor(startingPoint) {
-        this.startingPoint = 'Dover';
+    constructor(startingPort) {
+        this.startingPort = 'Dover';
     };
 };
 
