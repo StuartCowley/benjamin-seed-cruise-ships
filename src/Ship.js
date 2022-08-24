@@ -1,14 +1,18 @@
 
 class Ship {
-    constructor(startingPort, setSail) {
-        this.startingPort = 'Dover';
+    constructor(currentPort) {
+        this.currentPort = currentPort;
     };
+
+    setSail() {
+        this.currentPort = null;
+    }
+    // see dependency inversion
+    dock(port) {
+        this.currentPort = port;
+    }
 };
-
-Ship.prototype.setSail = function (startingPort) {
-    this.startingPort = startingPort;
-}
-
+// a falsy value is false, 0, null, NaN etc
 
 
 module.exports = Ship;
