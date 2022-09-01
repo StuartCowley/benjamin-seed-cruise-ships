@@ -19,7 +19,7 @@ const Itinerary = require("./Itinerary");
         // removeShip from currentPort
         this.previousPort = this.currentPort;
         this.currentPort = null;
-        this.previousPort.removeShip();
+        this.previousPort.removeShip(this);
         
     }
     // see dependency inversion
