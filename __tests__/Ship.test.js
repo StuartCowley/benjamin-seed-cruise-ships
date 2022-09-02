@@ -25,7 +25,10 @@ describe('Ship', () => {
                 ships: []
             };
 
-             itinerary = new Itinerary([dover, calais]);
+             itinerary = {
+                ports: [dover, calais]
+             };
+
              ship = new Ship(itinerary);
         })
         it('can be instantiated', () => {
@@ -44,6 +47,10 @@ describe('Ship', () => {
         })
     
         it('can dock at a different port', () => {
+            // const dover = new Port('Dover');
+            // const calais = new Port('Calais');
+            // const itinerary = new Itinerary([dover, calais]);
+            // const ship = new Ship(itinerary);
             ship.setSail()
             ship.dock();
     
