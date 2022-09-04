@@ -6,6 +6,7 @@ const Itinerary = require("./Itinerary");
         this.currentPort = itinerary.ports[0];
         this.previousPort = null;
         this.currentPort.addShip(this);
+
     }
 
     setSail() {
